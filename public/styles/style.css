@@ -1,0 +1,29 @@
+.dataContainer{
+height: 300px;
+width: 300px;
+background-color: orange;
+/*display: flex;*/
+}
+
+#chore{
+  height: 50px;
+  width: 250px;
+  background-color: yellow;
+  /*justify-content: space-around;*/
+}
+
+#description{
+  height: 50px;
+  width: 250px;
+  background-color: yellow;
+  /*justify-content: space-around;*/
+
+}
+
+#status{
+  height: 50px;
+  width: 250px;
+  background-color: yellow;
+  /*justify-content: space-around;*/
+
+}
