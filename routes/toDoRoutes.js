@@ -18,11 +18,11 @@ toDoRoutes.get('/:id', toDoListController.show);
 
 
 
-// toDoRoutes.get('/:id/edit', toDoListController.edit);
+toDoRoutes.get('/:id/edit', toDoListController.edit);
 
-// toDoRoutes.put('/:id', toDoListController.update);
+toDoRoutes.put('/:id', toDoListController.update);
 
-// toDoRoutes.delete('/:id', toDoListController.delete);
+toDoRoutes.delete('/:id', toDoListController.delete);
 
 module.exports = toDoRoutes;
 

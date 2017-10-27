@@ -52,19 +52,19 @@ toDoListController.edit = (req, res) => {
     });
 };
 
-// toDoListController.update = (req, res) => {
-//   ToDoList.update({
-//     chore: req.body.chore,
-//     description: req.body.description,
-//     status: req.body.status
-//   }, req.params.id)
-//   .then(data => {
-//     res.redirect(`/toDo/${data.id}`)
-//   }).catch((err) => {
-//       console.log(err);
-//       res.status(500).json({error: err});
-//     });
-// };
+toDoListController.update = (req, res) => {
+  ToDoList.update({
+    chore: req.body.chore,
+    description: req.body.description,
+    status: req.body.status
+  }, req.params.id)
+  .then(data => {
+    res.redirect(`/toDo/${data.id}`)
+  }).catch((err) => {
+      console.log(err);
+      res.status(500).json({error: err});
+    });
+};
 
 toDoListController.delete = (req, res) => {
   ToDoList.destroy(req.params.id)

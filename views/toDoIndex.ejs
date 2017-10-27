@@ -13,6 +13,15 @@
   <h3 id="status"><%= todo.status %></h3>
   <br>
 
+  <form method="get" action="/toDo/<%= todo.id%>/edit" >
+  <button type="submit">Edit</button>
+  </form>
+  <br>
+
+  <form method="POST" action="/toDo/<%= todo.id %>?_method=DELETE">
+    <button type="submit">Delete</button>
+  </form>
+
 </div>
 
 
@@ -20,11 +29,12 @@
 
 <% }) %>
 
-
+<br>
+<br>
+<br>
 <a href="/toDo/add"><button type="button" id="add">Add to List</button></a>
-
-
-
+<br>
+<br>
 
 
 <% include ./partials/end.ejs %>
